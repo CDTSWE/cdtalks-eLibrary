@@ -123,7 +123,7 @@ const LibraryTable = ({ books }: { books: BookType[] }) => {
     if (res) {
       toast.success('Book deleted successfully')
     } else {
-      toast.error('Failed to delete book. Please try agaim')
+      toast.error('Failed to delete book. Please try again')
     }
 
     setState(prevState => ({ ...prevState, selectedData: null, isDeleteModalOpen: false }))
